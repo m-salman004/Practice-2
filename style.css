@@ -21,3 +21,9 @@
 .btn_cus:hover{
     background-color: #c92f3c;
 }
+.min_height{
+    height: 90%;
+}
+.center_this{
+    min-height: calc(100vh - 112px);
+}
