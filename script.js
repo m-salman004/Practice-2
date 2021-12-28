@@ -71,7 +71,24 @@ function addCity() {
     cities.push(inputhere)
     error("City is added Successfuly")
 }
+function checkCity() {
+    let inputhere = input.value.toLowerCase();
+    let index = cities.indexOf(inputhere)
+    if (!inputhere) {
+        error("Enter some text")
+        return;
+    }
+    if (index !== -1) {
+        let i = `<span> The ${inputhere} is in the list and the index of ${inputhere} is ${index}`
+        output.innerHTML = i
+        return;
+    }
+    else {
+        let i = `The city ${inputhere} is not in list`
+        output.innerHTML = i
+    }
 
+}
 
 
 
