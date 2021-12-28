@@ -37,3 +37,8 @@ function upperCase() {
     let uppercase = originalString.innerHTML.toUpperCase();
     showOutput(uppercase)
 }
+function capitalize() {
+    let capitalize = originalString.innerHTML;
+    let output = `<span style="text-transform:capitalize">${capitalize}</span>`
+    showOutput(output)
+}
