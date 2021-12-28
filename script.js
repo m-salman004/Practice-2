@@ -87,9 +87,21 @@ function checkCity() {
         let i = `The city ${inputhere} is not in list`
         output.innerHTML = i
     }
-
 }
-
+function findWord() {
+    let string = originalString.innerHTML;
+    let inputText = input.value.toLowerCase();
+    let index = string.indexOf(inputText);
+    if (!inputText) {
+        error("Please Enter Some text")
+        return;
+    }
+    if (index !== -1) {
+        showOutput(`<span style="font-weight:900;">This text found Successfuly in</span> <br>` + string)
+    } else {
+        showOutput("This text in not in string")
+    }
+}
 
 
 
