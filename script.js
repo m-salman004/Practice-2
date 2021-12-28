@@ -50,7 +50,12 @@ function betterFormatting() {
     }
     output.innerHTML = `<span style="text-transform:capitalize">${inputhere}</span>`
 }
-
+function printCities() {
+    output.innerHTML = "";
+    for (i = 0; i < cities.length; i++) {
+        output.innerHTML += cities[i] + "<br>"
+    }
+}
 
 
 
