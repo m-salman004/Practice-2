@@ -28,3 +28,8 @@ function error(innertext) {
 function showOutput(result) {
     output.innerHTML = result;
 }
+// Other functions
+function lowercase() {
+    let lowerCase = originalString.innerHTML.toLowerCase();
+    showOutput(lowerCase)
+}
