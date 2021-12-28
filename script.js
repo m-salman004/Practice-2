@@ -42,3 +42,21 @@ function capitalize() {
     let output = `<span style="text-transform:capitalize">${capitalize}</span>`
     showOutput(output)
 }
+function betterFormatting() {
+    let inputhere = input.value;
+    if (!inputhere) {
+        error("Please Enter Some text")
+        return;
+    }
+    output.innerHTML = `<span style="text-transform:capitalize">${inputhere}</span>`
+}
+
+
+
+
+
+
+
+
+
+
