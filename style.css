@@ -10,3 +10,14 @@
 .border-1{
     border-style: solid;
 }
+.btn_cus{
+    min-width: 250px ;
+    background-color: #E63946;
+    border:none;
+    color: white;
+    padding: 10px;
+    margin: 2px;
+}
+.btn_cus:hover{
+    background-color: #c92f3c;
+}
