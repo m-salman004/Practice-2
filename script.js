@@ -56,6 +56,21 @@ function printCities() {
         output.innerHTML += cities[i] + "<br>"
     }
 }
+function addCity() {
+    output.innerHTML = "";
+    let inputhere = input.value.toLowerCase();
+    if (!inputhere) {
+        error("Please Type some city name")
+        return;
+    }
+    let index = cities.indexOf(inputhere)
+    if (index !== -1) {
+        error("This City is already on list")
+        return;
+    }
+    cities.push(inputhere)
+    error("City is added Successfuly")
+}
 
 
 
