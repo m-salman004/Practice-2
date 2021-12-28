@@ -33,3 +33,7 @@ function lowercase() {
     let lowerCase = originalString.innerHTML.toLowerCase();
     showOutput(lowerCase)
 }
+function upperCase() {
+    let uppercase = originalString.innerHTML.toUpperCase();
+    showOutput(uppercase)
+}
